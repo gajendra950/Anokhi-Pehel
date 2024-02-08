@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
+import Abc from "../assets/Anokhi pehel.png";
+
 const navigation = [
   { name: 'About', href: '#about' },
   { name: 'Students', href: '#' },
@@ -24,6 +26,7 @@ export default function Example() {
 
   </a>
 </div>
+    
 
 
           <div className="flex lg:hidden">
@@ -36,6 +39,9 @@ export default function Example() {
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
+
+        
+
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
               <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
@@ -96,6 +102,7 @@ export default function Example() {
           </Dialog.Panel>
         </Dialog>
       </header>
+      
 
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
@@ -110,15 +117,28 @@ export default function Example() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-2xl py-15 sm:py-24 lg:py-30">
-         
+        <img className="h-96 w-96 rounded-full object-cover object-mid absolute top-20" src={Abc} alt="Sunset in the mountains"/>
+            {/* this */}
+
+        
+        <div className="mx-auto max-w-2xl py-6 sm:py-2 lg:py-12">
+        
+            
+        
+
           <div className="text-center">
+            {/* this */}
+          
+            
             <h1 className="text-4xl font-bold tracking-tight text-blue-900 sm:text-6xl">
              Anokhi Pehel 
             </h1>
+            <div  className="text-right">
             <h1 className="text-2xl font-medium tracking-tight text-gray-900 sm:text-4xl">
-             सुनहरे सपनों का कल
+                            सुनहरे सपनों का कल
             </h1>
+            </div>
+            
             <p className="mt-6 font-medium leading-8 text-black">
             Anokhi Pehel is an initiative taken by the students of MNNIT to help the children of the economically weaker sections of the society by providing them an education in the best possible way.
             </p>
@@ -132,13 +152,18 @@ export default function Example() {
               <a href="/" className="text-sm font-semibold leading-6 text-gray-900">
                 Learn more <span aria-hidden="true">→</span>
               </a>
+
+            
+              
             </div>
           </div>
         </div>
+       
         <div
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
           aria-hidden="true"
         >
+          
           <div
             className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
             style={{
